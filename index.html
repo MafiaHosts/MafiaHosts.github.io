@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +9,16 @@
 <body>
   <header>
     <h1>Reward System</h1>
+<div id="userSection" class="hidden">
+      <span id="loggedInUser"></span>
+   
+    </div>
+    <div id="authSection">
+      <input type="text" id="usernameInput" placeholder="Enter Username">
+      <button onclick="registerUser()">Register</button>
+      <button onclick="loginUser()">Login</button>
     <div class="balance">Balance: <span id="balanceCount">0</span></div>
-  </header>
+  <header>
   <main class="container">
     <aside class="sidebar">
       <h2>Study Sessions</h2>
@@ -20,32 +29,32 @@
     </aside>
     <section class="rewards">
       <div class="reward-item">
-        <img src="phone_case.jpg" alt="Phone Case" class="reward-image">
+        <img src="https://www.travelandleisure.com/thmb/X49q7d_P0KH4BPNQQFbeOGKCHLY=/fit-in/1500x1000/filters:no_upscale():max_bytes(150000):strip_icc()/peak-design-mobile-everyday-case-6856de11b3b141269b0c22cd724d1412.jpg" alt="Phone Case" class="reward-image">
         <button onclick="claimReward(100)">Phone Case (100 Points)</button>
       </div>
       <div class="reward-item">
-        <img src="dessert.jpg" alt="Home Made Dessert" class="reward-image">
+        <img src="https://www.southernliving.com/thmb/mYBS0UeSAIqxsIqJx8vEAGYA888=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Individual-Peach-Pies_TK517C_16x9-324_preview_scale_100_ppi_150_quality_100-29fdaa1d1840462ea56e68ca2ebeaef1.jpg" alt="Home Made Dessert" class="reward-image">
         <button onclick="claimReward(100)">Home Made Dessert (100 Points)</button>
       </div>
       <div class="reward-item">
-        <img src="hoodie.jpg" alt="Hoodie" class="reward-image">
+        <img src="https://www.travelandleisure.com/thmb/_TfvXSsfnGdOFaZKfjY15vg0s1c=/fit-in/1500x1000/filters:no_upscale():max_bytes(150000):strip_icc()/pangaia-365-heavyweight-hoodie-844cf7befa5044b9aec3ff76d0da4a66.jpg" alt="Hoodie" class="reward-image">
         <button onclick="claimReward(500)">Hoodie (500 Points)</button>
       </div>
       <div class="reward-item">
-        <img src="shoes.jpg" alt="Shoes" class="reward-image">
+        <img src="https://stylegirlfriend.com/wp-content/uploads/2016/03/BVJ82E1ILO-1-1500x1000.jpg" alt="Shoes" class="reward-image">
         <button onclick="claimReward(2000)">Shoes (2000 Points)</button>
       </div>
       <!-- Additional rewards -->
       <div class="reward-item">
-        <img src="airpods.jpg" alt="AirPods Pro" class="reward-image">
+        <img src="https://www.parents.com/thmb/NiMJJAwEJTjpAz_UZr9ZQq-ERAs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/deal-one-off-apple-airpods-tout-ac4ae94ae4d749d18a1145155bc0e601.jpg" alt="AirPods Pro" class="reward-image">
         <button onclick="claimReward(2500)">AirPods Pro (2500 Points)</button>
       </div>
       <div class="reward-item">
-        <img src="dog_cafe.jpg" alt="Dog Cafe" class="reward-image">
+        <img src="https://www.thesprucepets.com/thmb/M8YzLEti4ZGmAr5af1BqxJ9Oc14=/1500x0/filters:no_upscale():strip_icc()/top-friendliest-dog-breeds-4691511_hero-5c6a918dcf56409c888d78b0fac82d18.jpg" alt="https://www.thesprucepets.com/thmb/M8YzLEti4ZGmAr5af1BqxJ9Oc14=/1500x0/filters:no_upscale():strip_icc()/top-friendliest-dog-breeds-4691511_hero-5c6a918dcf56409c888d78b0fac82d18.jpg" class="reward-image">
         <button onclick="claimReward(100)">Dog Cafe (100 Points)</button>
       </div>
       <div class="reward-item">
-        <img src="apple_watch.jpg" alt="Apple Watch" class="reward-image">
+        <img src="https://hniesfp.imgix.net/8/images/detailed/656/tit_grey_grey_1.jpg?fit=fill&bg=0FFF&w=1500&h=1000&auto=format,compress" alt="Apple Watch" class="reward-image">
         <button onclick="claimReward(1000)">Apple Watch (1000 Points)</button>
       </div>
     </section>
