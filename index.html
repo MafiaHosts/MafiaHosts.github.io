@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reward System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Reward System</h1>
+    <div class="balance">Balance: <span id="balanceCount">0</span></div>
+  </header>
+  <main class="container">
+    <aside class="sidebar">
+      <h2>Study Sessions</h2>
+      <button onclick="registerPoints(15)">Study Chemistry (15 Points)</button>
+      <button onclick="registerPoints(20)">Study Maths (20 Points)</button>
+      <button onclick="registerPoints(25)">Study Physics (25 Points)</button>
+      <button onclick="registerPoints(40)">Study Arabic (40 Points)</button>
+    </aside>
+    <section class="rewards">
+      <div class="reward-item">
+        <img src="phone_case.jpg" alt="Phone Case" class="reward-image">
+        <button onclick="claimReward(100)">Phone Case (100 Points)</button>
+      </div>
+      <div class="reward-item">
+        <img src="dessert.jpg" alt="Home Made Dessert" class="reward-image">
+        <button onclick="claimReward(100)">Home Made Dessert (100 Points)</button>
+      </div>
+      <div class="reward-item">
+        <img src="hoodie.jpg" alt="Hoodie" class="reward-image">
+        <button onclick="claimReward(500)">Hoodie (500 Points)</button>
+      </div>
+      <div class="reward-item">
+        <img src="shoes.jpg" alt="Shoes" class="reward-image">
+        <button onclick="claimReward(2000)">Shoes (2000 Points)</button>
+      </div>
+      <!-- Additional rewards -->
+      <div class="reward-item">
+        <img src="airpods.jpg" alt="AirPods Pro" class="reward-image">
+        <button onclick="claimReward(2500)">AirPods Pro (2500 Points)</button>
+      </div>
+      <div class="reward-item">
+        <img src="dog_cafe.jpg" alt="Dog Cafe" class="reward-image">
+        <button onclick="claimReward(100)">Dog Cafe (100 Points)</button>
+      </div>
+      <div class="reward-item">
+        <img src="apple_watch.jpg" alt="Apple Watch" class="reward-image">
+        <button onclick="claimReward(1000)">Apple Watch (1000 Points)</button>
+      </div>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
